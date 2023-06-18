@@ -1,0 +1,111 @@
+/*Header.css*/
+@import url("main.css");
+@import url("dropdown.css");
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400;1,500&family=Trocchi&display=swap');
+*h1{
+    all:unset;
+
+}
+a{
+    text-decoration: none;
+    
+    all:unset;
+}
+
+*{
+    font-family: "Arimo",sans-serif;
+    opacity: 100%;
+    font-size: 25px;
+    
+}
+
+body{
+   background-image: url("resources/Bg.jpg");
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+   
+    margin:0;
+    padding:0;
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+header{
+    background-color: white;
+    opacity:95%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+   
+    margin:0 50px;
+    
+    margin-top: 10px;
+    
+}
+header .Mitsi-Logo{
+    display: flex;
+    height: 120px;
+    margin-top: none;
+    
+    flex:2;
+}
+
+header .Mitsi-Logo img{
+    height: 200px;
+    width: 200px;
+    margin-left: 25px;
+    
+}
+header .menu-container{
+    display: flex;
+    height: 120px;
+    
+}
+header .menu-container .nav-container{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding:25px 50px;
+    
+    
+    
+
+    
+}
+header .menu-container .nav-container .Exit a{
+    font-size:25px;
+
+    font-size-adjust: auto;
+    color:black;
+    cursor: pointer;
+    padding:5px;
+    padding-left:10px;
+    border-radius: 3px;
+    border-radius:50% 0 0 50%;
+    background-color: rgb(74, 164, 74);
+    box-shadow: 3px 3px;
+    
+
+   
+}
+header .menu-container .nav-container .Exit a:hover{
+    font-size:25px;
+    background-color: rgb(0, 255, 21);
+
+    font-size-adjust: auto;
+    color:white;
+    
+    
+
+   
+}
+header .menu-container .nav-container .Exit img{
+    height: 25px;
+    width: 25px;
+    
+}
