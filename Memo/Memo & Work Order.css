@@ -1,0 +1,188 @@
+html,
+html{
+    height: 100vh;
+    
+}
+
+
+
+
+footer{
+    background-color: green;
+    height: 120px;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 35%, 100% 100%, 0% 100%);
+    
+}
+
+
+body{
+
+    height: auto;
+    width: auto;
+
+    background-color: lightgray;
+    padding:0;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+   
+
+ 
+   
+
+}
+
+header{
+    top:0;
+    left:90%;
+    position: absolute;
+    height: 120px;
+    width: auto;
+    justify-content: right;
+}
+header  button,a{
+
+    all:unset;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+header button:hover{
+    color: blue;
+    text-decoration: underline;
+
+}
+header .back{
+
+    margin:20px;
+    font-size: large;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+
+.container{
+
+    justify-content: center;
+    
+    align-items: center;
+    text-align: center;
+    margin:120px;
+    margin-bottom:50px ;
+    height: 500px;
+    width: auto;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+.memo-up{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: auto;
+    margin:0 50px;
+   
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+
+}
+
+
+
+
+.Up-container{
+
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.memo-up .thumbnail .Up-container button{
+    margin-top:20px;
+    all:unset;
+    text-decoration: none;
+    cursor: pointer;
+}
+.memo-up .thumbnail .Up-container button:hover{
+    color: blue;
+    text-decoration: underline;
+
+
+}
+
+
+.Upload-File{
+    position: relative;
+    top:30%;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: sans-serif;
+    opacity: 80%;
+    background-color: lightgrey;
+
+   
+
+}
+.memo-up .thumbnail{
+    position: relative;
+    
+    overflow: hidden;
+   
+    
+    height: 100%;
+    
+    width: 100%;
+    background-size: cover;
+    margin: 10px;
+   
+    border-bottom: 2px solid black;
+    
+    
+    
+   
+
+
+}
+
+
+
+
+.memo-up .thumbnail  img{
+
+ 
+    top:30%;
+    margin-left:20px;
+    height: 180px;
+    width: 150px;
+}
+
+
+.memo-up .btns{
+    margin: 10px;
+    background-color: white;
+    padding:5px;
+    border: 2px solid black;
+    display: none;
+}
+.memo-up   .show{
+    transform-origin: top;
+    transition: 350ms ease-in-out;
+    margin: 10px;
+    background-color: lightgrey;
+    padding:5px;
+    border: 2px solid black;
+   
+}

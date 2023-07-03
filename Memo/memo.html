@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Memo & Work Order.css">
+
+  <script>
+
+   
+
+    function myFunction(){
+      let chooseFile=document.getElementById('btns');
+      if(chooseFile.classList="btns"){
+        chooseFile.classList.toggle('show');
+        chooseFile.classList.remove('btns');
+      }
+      else{
+        return chooseFile;
+      }
+     
+
+
+    }
+    function x(){
+      window.alert("File has been Sent!");
+    }
+    
+    const submit=document.querySelectorAll("#submit");
+    submit.addEventlistener("click", x());
+
+
+
+
+  
+
+
+
+
+
+  </script>
+</head>
+<body>
+   <!-- BACK BUTTON HERE -->
+
+  <header>
+    <button class="back">
+      <a href="Work Order.html">Back</a>
+
+    </button>
+  </header>
+
+
+  <div class="container">
+  
+    
+    
+    <div class="memo-up">
+
+       
+     
+        <div class="thumbnail" >
+           
+          <div class="Up-container">
+
+            <span><img src="src/Memo.png" alt="">
+           </span>
+
+           
+            <button type="submit"class="Upload-File" onclick="myFunction()" >⊕ Upload Work Order File</button>
+          
+       
+          
+          </div>
+             
+            
+         
+          </div>
+          
+        <div class="btns" id="btns">
+
+         
+          <form action="" method="post">
+
+               
+            <input type="file" aria-label="Choose File" id="file-upbtn">
+         
+        
+          <input type="submit" value="submit" id="submit">
+          <input type="reset" value="reset">
+          </form>
+            
+        
+        </div>
+         
+
+      
+
+    </div>
+ 
+
+  </div>
+  <footer>
+    <p>Style</p>
+  </footer>
+  
+</body>
+
+</html>
