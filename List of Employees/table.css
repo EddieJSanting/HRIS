@@ -1,0 +1,494 @@
+*a{
+    text-decoration: none;
+    font-style: none;
+    color:unset;
+}
+
+
+.employee-table td{
+    font-size: 10px;
+    margin: 25px 0;
+    max-height: 40px;
+    min-height: 40px;
+    width:200px;
+   
+  
+    border-bottom:none;
+}
+
+.employee-table td .action{
+    max-height: 100%;
+    min-height: 100%;
+    width:200px;
+    border-bottom: none;
+   justify-content: center;
+   overflow: hidden;
+   
+}
+th{
+   text-decoration: none;
+}
+
+
+.employee-table table th{
+    font-family: 'arimo',sans-serif;
+    font-weight: 400;
+   
+    background-color:rgb(241, 241, 241);
+    width: 200px;
+    padding-top:10px;
+    max-height: 40px;
+    min-height: 40px;
+    border: 2px solid;
+    
+    border-right: none;
+    border-left:none;
+    border-top:none;
+    
+    position: sticky;
+    top:0;
+}
+
+
+
+  
+
+
+
+.employee-table{
+    font-size: 10px;
+    
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    margin:35px;
+    margin-top:25px;
+    
+    
+    border: none;
+    opacity: 100%;
+    box-shadow: inset;
+    background-color: rgba(255, 255, 255, 0.747);
+    box-shadow: 3px;
+    opacity: 95%;
+    
+    scrollbar-3dlight-color: black;
+    scrollbar-width: 3px;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    
+    
+     
+    
+}
+
+.employee-table:hover{
+    transform-origin: right;
+    overflow: auto;
+    scrollbar-color: darkgreen;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    transition: 500ms;
+   
+    
+    
+
+    
+    
+}
+.employee-table table{
+    font-size: 10px;
+   
+    padding:10px;
+    max-height: 500px;
+    
+    
+}
+
+table{
+    font-size: 10px;
+    width: 100%;
+    padding:0 25px;
+    
+    border-collapse: collapse;
+   
+}
+
+th, table, td,tr{
+    font-size: 13px;
+    font-family: 'Animo',sans-serif;
+   
+   
+   
+    
+    
+    border: none;
+   
+   
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.employee-table table .Employee-Name{
+    max-height: 40px;
+    min-height: 40px;
+    max-width: 300px;
+    min-width: 300px;
+
+   border-right: 4px solid black ;
+    border-left:none;
+}
+.employee-table table .Employeename{
+   
+
+   border-right: 4px solid black ;
+    border-left:none;
+}
+
+.employee-table table .action{
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+   
+    
+    
+    
+    justify-content: center;
+    border-bottom:0;
+   
+    
+   
+}
+.employee-table table td,th,tr{
+   
+
+
+    min-width: 80px;
+}
+.employee-table table tr{
+    border-bottom:4px solid black;
+    
+}
+
+
+.employee-table table .action .memo span {
+    max-height: 100%;
+    min-height: 100%;
+    
+    color: black;
+    margin:0 5px;
+    
+   
+  
+    
+    
+}
+.employee-table table .action .memo span img{
+    height: 13px;
+    margin-bottom:0;
+    justify-content: center;
+    margin:0 5px;
+  
+    
+}
+
+
+/*MEMO*/
+button{
+    all:unset;
+}
+
+.employee-table table .action .memo button{
+
+
+
+
+    cursor: pointer;
+    color: black;
+    margin:0 5px;
+}
+.employee-table table .action .memo .show{
+
+    transition: 500ms ease-out;
+    height: 150px;
+    
+    position:absolute;
+
+    top:30%;
+    left: 50%;
+    
+    background-color: white;
+    opacity: 100%;
+    margin-top:250px;
+    border:2px solid black;
+
+    box-shadow: 3px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    overflow: hidden;
+   
+    
+    z-index: 10;
+    transform:translate(-50%,-50%);
+    
+    
+
+
+
+}
+.employee-table table .action .show a{
+    all:unset;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.employee-table table .action .show .memo-link{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    
+   
+    align-items: center;
+    text-align: center;
+    
+   
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+.employee-table table .action .show .Work-Order{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+   
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.employee-table table .action .show .memo-link a{
+    height: auto; 
+    width: 100%;
+    margin-right: 10px;
+   
+  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.employee-table table .action .show .Work-Order a{
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+  
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.employee-table table .action .show .Work-Order a:hover{
+
+    color: blue;
+    text-decoration: underline;
+
+    
+}
+.employee-table table .action .show .memo-link a:hover{
+
+    color: blue;
+    text-decoration: underline;
+
+    
+}
+
+
+
+
+
+
+
+
+
+.employee-table table .action .show .Work-Order .img img{
+    height: 40px;
+    width: 40px;
+
+}
+.employee-table table .action .show .memo-link .img img{
+    height: 40px;
+    width: 40px;
+
+}
+
+.employee-table table .action .memo .show::after{
+
+    transition: 500ms ease-in;
+ 
+    transform:translate(-50%,-50%) scale(0.1);
+    
+    
+
+
+
+}
+
+
+
+
+.employee-table table .action .memo .popup{
+
+    position:absolute;
+
+    top:50%;
+    left: 50%;
+    padding:100px;
+    background-color: transparent;
+    opacity: 100%;
+
+    box-shadow: inset;
+    display: grid;
+    grid-template-rows: 600px 100px;
+   
+    
+   
+    z-index: 10;
+    transform:translate(-50%,-50%);
+   
+    transition: 3as ease-in;
+    visibility: hidden;
+
+
+}
+
+.employee-table table .action .memo .show .btn  {
+    
+    font-family: 'Arimo',sans-serif;
+    font-weight: 100;
+    padding:0;
+    background-color: transparent;
+   border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    margin-top:10px;
+   
+ 
+  
+    z-index: 11;
+    
+    align-items: center;
+   
+    
+    
+
+
+
+
+}
+.employee-table table .action .memo .show .btn-form{
+
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin:none;
+}
+.employee-table table .action .memo .show .btn-container{
+    
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ 
+}
+.employee-table table .action .memo .show .btn:hover  {
+
+background-color: lightgray;
+
+
+
+
+}
+
+
+
+
+
+
+.employee-table table .memo .show .pop-up-content{
+
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 200px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.employee-table table .action .edit span {
+    max-height: 100%;
+    min-height: 100%;
+    
+    color: black;
+    
+    margin:0 5px;
+  
+    
+    
+}
+.employee-table table .action .edit span img{
+    height: 13px;
+    margin-bottom:0;
+    justify-content: center;
+    margin:0 5px;
+  
+    
+}
+.employee-table table .action .edit a{
+    color: black;
+    margin:0 5px;
+}
+   
+   
+
+
+.employee-table table .action .print span {
+    max-height: 100%;
+    min-height: 100%;
+    
+    color: black;
+    
+    margin:0 5px;
+  
+    
+    
+}
+.employee-table table .action .print span img{
+    height: 13px;
+    margin-bottom:0;
+    justify-content: center;
+    margin:0 5px;
+  
+    
+}
+.employee-table table .action .print a{
+    margin-top:25px;
+    
+    margin:0 5px;
+    color: black;
+}
